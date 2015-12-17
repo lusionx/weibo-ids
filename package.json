@@ -9,10 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://git.oschina.net/lusionx/weibo-ids"
+    "url": "http://github.com/lusionx/weibo-ids"
   },
   "keywords": [
-    "weibo id mid"
+    "weibo",
+    "id",
+    "mid"
   ],
   "author": "liuxing",
   "license": "MIT",
