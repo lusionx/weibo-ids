@@ -10,13 +10,11 @@ chars = [
 
 # 不变顺序, 将字符串从右取段分割 '1212345671234567' / 7 -> [12, 1234567, 1234567]
 _rsplite = (str, n) ->
-  l = Math.ceil str.length / n
-  p1 = str.length % n
-  _.map [0...l], (i) ->
-    return str[0...p1] if i is 0
-    skip = p1 + (i-1) * n
-    #console.log 'i %d, skip %d, %s', i, skip, str[skip...n]
-    str[skip..skip + n - 1]
+  ss = str.split ''
+  ar = _.chunk ss.reverse(), n
+  ar = _.map ar, (e) ->
+    e.reverse().join ''
+  ar.reverse()
 
 id2mid = (id) ->
   throw Error 'not all number' if not /^\d+$/.test id
