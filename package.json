@@ -1,12 +1,14 @@
 {
   "name": "weibo-ids",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "id mid convert",
   "main": "lib/index.js",
+  "types": "index.d.ts",
   "files": [
     "package.json",
     "README.md",
-    "lib/index.js"
+    "lib/index.js",
+    "index.d.ts"
   ],
   "scripts": {
     "prepublish": "coffee -o lib -c src/*.coffee",
