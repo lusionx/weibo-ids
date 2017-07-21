@@ -1,6 +1,6 @@
 {
   "name": "weibo-ids",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "id mid convert",
   "main": "lib/index.js",
   "types": "index.d.ts",
